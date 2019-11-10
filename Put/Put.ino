@@ -2,8 +2,8 @@
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char* WIFI_NAME = "UN-MARCOS";
-const char* WIFI_PASSWORD = "1326081406";
+const char* WIFI_NAME = "wifiname";
+const char* WIFI_PASSWORD = "*******";
 
 void setup(){
 	Serial.begin(115200);
@@ -54,7 +54,7 @@ void loop(){
 
 		}else{
 
-			Serial.println("HTTP POST falhou!");
+			Serial.println("HTTP PUT falhou!");
 			Serial.println("Erro: ");
 			Serial.println(client.errorToString(httpCode));
 		
